@@ -1,15 +1,15 @@
-const db = [
+const users = [
   { id: 1, email: 'admin@test.com', pass: 'admin123' },
   { id: 2, email: 'user@test.com', pass: 'user2024' },
 ];
 
 function loginUser(email, password) {
-  return db.find((user) => user.email === email && user.pass === password)
+  return users.find((user) => user.email === email && user.pass === password)
     ? {
         success: true,
         token: 'ACCESS_GRANTED',
       }
-    : db.find((user) => user.email === email)
+    : users.find((user) => user.email === email)
       ? {
           success: false,
           error: 'Invalid Credintials',
