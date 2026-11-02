@@ -2,8 +2,8 @@
 
 Challenge consisting of three programming logic problems, which are easy ones
 
-**Level 1** - Data Cleaning: The Username
-**Level 2** - Authentication: The Login
+**Level 1** - Data Cleaning: The Username\
+**Level 2** - Authentication: The Login\
 **Level 3** - Transaction Logic: The Money Transfer
 
 # Solutions
@@ -61,7 +61,7 @@ console.log("'new@test.com', '123'");
 console.log(loginUser('new@test.com', '123'));
 ```
 
-Level 3 - Transaction Logic: The Money Transfer
+## Level 3 - Transaction Logic: The Money Transfer
 ```js
 function transferMoney(userA_Balance, userB_Balance, amount) {
   return amount <= 0
